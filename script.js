@@ -13,7 +13,7 @@ const booksDiv = document.querySelector('.books');
 class CreateNewBook {
   static addNewBook(book) {
     const bookUnit = document.createElement('li');
-    bookUnit.className = 'books-li'
+    bookUnit.className = 'books-li';
     bookUnit.id = book.id;
     bookUnit.innerHTML = `
         <p class="book-name">${book.title}</p>
