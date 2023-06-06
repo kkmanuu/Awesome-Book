@@ -54,10 +54,10 @@ To install all dependencies, run:
 npm install
 ```
 
-<!-- ### Usage
+### Usage
 To run the project, follow these instructions:
 - After Cloning this repo to your local machine.
-- Open the `index.html` in your browser. -->
+- Open the `index.html` in your browser.
 
 ### Run tests
 To run tests, run the following command:
