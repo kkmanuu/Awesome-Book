@@ -1,65 +1,90 @@
-// Get DOM elements
-const booksDiv = document.querySelector('.books');
+/* eslint-disable max-classes-per-file */
+class Books {
+  constructor(title, author, id) {
+    this.title = title;
+    this.author = author;
+    this.id = id;
+  }
+}
+
 const form = document.querySelector('.form');
+const booksDiv = document.querySelector('.books');
 
-let books = JSON.parse(localStorage.getItem('books')) || [];
-
-// Function to display all books in the collection
-function displayBooks() {
-  booksDiv.innerHTML = '';
-
-  books.forEach((book) => {
+class CreateNewBook {
+  static addNewBook(book) {
     const bookUnit = document.createElement('li');
-    bookUnit.className = 'books-li';
+    bookUnit.className = 'books-li'
     bookUnit.id = book.id;
     bookUnit.innerHTML = `
-      <p class="book-name">${book.title}</p>
-      <p>By</p>
-      <p class="the-author">${book.author}</p>
-      <button class='removeBook'>Remove</button>
-    `;
+        <p class="book-name">${book.title}</p>
+        <p class="the-auhtor">${book.author}</p>
+        <button class='removeBook'>Remove</button>
+        `;
     booksDiv.appendChild(bookUnit);
-  });
+    booksDiv.style.border = '3px solid black';
+  }
+
+  static removeBookFromPage(target) {
+    if (target.classList.contains('removeBook')) {
+      target.parentElement.remove();
+    }
+
+    if (!booksDiv.firstElementChild) {
+      booksDiv.style.border = '3px solid white';
+    }
+  }
+
+  static loadFromStorage() {
+    let books;
+
+    if (localStorage.getItem('bookInfo')) {
+      books = JSON.parse(localStorage.getItem('bookInfo'));
+    } else {
+      books = [];
+    }
+
+    return books;
+  }
+
+  static displayBooksFromStorage() {
+    const books = CreateNewBook.loadFromStorage();
+
+    books.forEach((book) => {
+      CreateNewBook.addNewBook(book);
+    });
+  }
+
+  static removeBookFromStorage(element) {
+    const books = CreateNewBook.loadFromStorage();
+    const { id } = element.parentElement;
+    const index = books.findIndex((book) => book.id === id);
+    books.splice(index, 1);
+    localStorage.setItem('bookInfo', JSON.stringify(books));
+  }
 }
 
-// Function to add a new book to the collection
-function addBook(title, author) {
-  const id = Date.now();
-  const book = { title, author, id };
-  books.push(book);
-  localStorage.setItem('books', JSON.stringify(books));
-  displayBooks();
-}
-
-// Function to remove a book from the collection
-function removeBook(id) {
-  books = books.filter((book) => book.id !== id);
-  localStorage.setItem('books', JSON.stringify(books));
-  displayBooks();
-}
-
-// Add event listener to the form submit event
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const titleInput = document.querySelector('.book-title');
   const authorInput = document.querySelector('.book-author');
-  const title = titleInput.value;
-  const author = authorInput.value;
+  const title = document.querySelector('.book-title').value;
+  const author = document.querySelector('.book-author').value;
+  const books = CreateNewBook.loadFromStorage();
 
-  if (title && author) {
-    addBook(title, author);
-    titleInput.value = '';
-    authorInput.value = '';
-  }
+  const book = new Books(title, author, Date.now());
+  books.push(book);
+  CreateNewBook.addNewBook(book);
+  CreateNewBook.loadFromStorage();
+
+  localStorage.setItem('bookInfo', JSON.stringify(books));
+
+  titleInput.value = '';
+  authorInput.value = '';
 });
 
-// Add event listener to the booksDiv for the removeBook button clicks
-booksDiv.addEventListener('click', (event) => {
-  if (event.target.classList.contains('removeBook')) {
-    const bookId = parseInt(event.target.parentElement.id, 10);
-    removeBook(bookId);
-  }
+booksDiv.addEventListener('click', (e) => {
+  CreateNewBook.removeBookFromPage(e.target);
+  CreateNewBook.removeBookFromStorage(e.target);
 });
 
-// Display the books on initial load
-displayBooks();
+window.addEventListener('load', CreateNewBook.displayBooksFromStorage);
