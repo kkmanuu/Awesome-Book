@@ -28,6 +28,7 @@
  ### Key Features <a name="key-features"></a>
 - **DOM MANIPULATION**
 - **JAVASCRIPT OBJECT**
+- **JAVASCRIPT CLASSES**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :computer: Getting Started <a name="getting-started"></a>
@@ -113,6 +114,7 @@ npx eslint .
 ## :telescope: Future Features <a name="future-features"></a>
 - [ ] **JAVASCRIPT OBJECT**
 - [ ] **DOM MANIPULATION**
+- [ ] **JAVASCRIPT CLASSES**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :star:️ Show your support <a name="support"></a>
