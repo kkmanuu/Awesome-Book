@@ -5,7 +5,6 @@ const booksDiv = document.querySelector('.books');
 const addNew = document.querySelector('.add-book');
 const viewList = document.querySelector('.my-grid');
 const viewContact = document.querySelector('.contact-info');
-const allNavLinks = document.querySelectorAll('.load');
 const listLink = document.querySelectorAll('.link-1');
 const AddLink = document.querySelectorAll('.link-2');
 const contactLink = document.querySelectorAll('.link-3');
