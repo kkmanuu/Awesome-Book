@@ -44,7 +44,7 @@ In order to run this project you need the following:
 ### Setup
 Clone this repository to your desired folder or download the Zip folder:
 ```
-git clone https://github.com/kkmanuu/Awesome-Book
+git clone https://github.com/kkmanuu/Awesome-Books
 ```
 - Navigate to the location of the folder in your machine
 
