@@ -104,7 +104,11 @@ npx eslint .
 - GitHub: [@githubhandle](https://github.com/kkmanuu)
 - Twitter: [@twitterhandle](https://twitter.com/kkmanuu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-kipngeno-879370242/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+:bust_in_silhouette: **Binyam Tegene**
+- GitHub: [@githubhandle](https://github.com/Log-benjamin?tab=repositories)
+- Twitter: [@twitterhandle](https://twitter.com/@binyam_tegene)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-tegene-4b77ab265)
 
 ## :telescope: Future Features <a name="future-features"></a>
 - [ ] **JAVASCRIPT OBJECT**
