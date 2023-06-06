@@ -44,7 +44,7 @@ In order to run this project you need the following:
 ### Setup
 Clone this repository to your desired folder or download the Zip folder:
 ```
-git clone https://github.com/kkmanuu/Awesome-Book
+git clone https://github.com/kkmanuu/Awesome-Books
 ```
 - Navigate to the location of the folder in your machine
 
@@ -104,7 +104,11 @@ npx eslint .
 - GitHub: [@githubhandle](https://github.com/kkmanuu)
 - Twitter: [@twitterhandle](https://twitter.com/kkmanuu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-kipngeno-879370242/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+:bust_in_silhouette: **Binyam Tegene**
+- GitHub: [@githubhandle](https://github.com/Log-benjamin?tab=repositories)
+- Twitter: [@twitterhandle](https://twitter.com/@binyam_tegene)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-tegene-4b77ab265)
 
 ## :telescope: Future Features <a name="future-features"></a>
 - [ ] **JAVASCRIPT OBJECT**
