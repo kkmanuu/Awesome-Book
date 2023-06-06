@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 # :green_book: Table of Contents
-- [:book: Portfolio ](#-portfolio-a-nameabout-projecta)
+- [:book: Awesome Book](#-Awesome-a-nameabout-projecta)
   - [:hammer_and_wrench: Built With ](#-built-with-a-namebuilt-witha)
     - [Tech Stack ](#tech-stack-a-nametech-stacka)
     - [Key Features ](#key-features-a-namekey-featuresa)
@@ -16,7 +16,7 @@
   - [:pray: Acknowledgments ](#-acknowledgments-a-nameacknowledgementsa)
   - [:memo: License ](#-license-a-namelicensea)
   
-   # :book: Portfolio <a name="about-project"></a>
+   # :book: Awesome-Book <a name="about-project"></a>
   - This website shows a sneak peek of what I have done, projects developed and deployed, and what I can do to your projects! Developed with   HTML, CSS, and JavaScript
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
@@ -26,13 +26,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
  ### Key Features <a name="key-features"></a>
-- **Great and sample design**
-- **Responsive for Mobile Menu**
-- **Preserve Data in Browser**
+- **DOM MANIPULATION**
+- **JAVASCRIPT OBJECT**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-:rocket: Live Demo
 
-[Click here](https://kkmanuu.github.io/My-Portfolio/)
 ## :computer: Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
 
@@ -47,7 +44,7 @@ In order to run this project you need the following:
 ### Setup
 Clone this repository to your desired folder or download the Zip folder:
 ```
-git clone https://github.com/kkmanuu/My-Portfolio
+git clone https://github.com/kkmanuu/Awesome-Book
 ```
 - Navigate to the location of the folder in your machine
 
@@ -110,10 +107,8 @@ npx eslint .
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :telescope: Future Features <a name="future-features"></a>
-- [ ] **Navbar**
-- [ ] **Contact**
-- [ ] **Popup window**
-- [ ] **Preserve Data**
+- [ ] **JAVASCRIPT OBJECT**
+- [ ] **DOM MANIPULATION**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :star:️ Show your support <a name="support"></a>
