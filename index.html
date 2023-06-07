@@ -9,12 +9,24 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-  <head>
-        <section class="my-grid">
+    <main>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">Awesome Books</div>
+                <ul class="nav-items">
+                    <li class="nav-links" id="ab"><a href="#list" class="link-1 load" >List</a></li>
+                    <li class="nav-links" id="abc"><a href="#form-field" class="link-2 load" >Add new</a></li>
+                    <li class="nav-links" id="abc"><a href="#contact-field" class="link-3 load" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="date"></section>
+        <section class="my-grid" id="list">
             <h1 class="website-title">All Awesome Books</h1>
-            <ul class="books">
+            <ul class="books"></ul><br>
+        </section>
 
-            </ul><br>
+        <section id="form-field" class="add-book">
             <div class="enter-book-and-title">
                 <form action="" class="form">
                     <h2>Add a new book</h2>
@@ -24,6 +36,21 @@
                 </form>
             </div>
         </section>
+
+        <section class="contact-info" id="contact-field">
+            <h2>Contact information</h2>
+            <p>
+                Do you have any questions or do you just want to say "Hello"? You can reach out to us!
+            </p>
+            <ul class="contact-list">
+                <li>Our email: mail@mail.com</li>
+                <li>Our phone number : 00435865344</li>
+                <li>Our Address: Streetname 22, 804503, City, Country</li>
+            </ul>
+        </section>
+        <footer>
+            <p>Copyright</p>
+        </footer>
     </main>
 </body>
 </html>
