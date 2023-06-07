@@ -36,7 +36,7 @@ header {
   padding: 10px;
   text-decoration: none;
   border-radius: 0%;
-  grid-column-end: var(#000)
+  grid-column-end: var(#000);
 }
 
 .link:hover {
@@ -58,7 +58,6 @@ header {
   border-bottom: 1px solid gray;
   height: 45px;
   padding: 0 1%;
-  border-bottom: 1px solid black;
 }
 
 .books-li:nth-child(odd) {
@@ -137,7 +136,7 @@ input {
 
 footer {
   display: flex;
-  background-color:grey;
+  background-color: grey;
   border-color: #000;
   color: #fff;
   height: 55px;
