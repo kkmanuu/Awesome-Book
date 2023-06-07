@@ -3,8 +3,50 @@
   box-sizing: border-box;
 }
 
-ul {
+main {
+  margin: 0;
+}
+
+header {
+  background-color: gray;
+  width: 95%;
+  margin: auto;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border-color: #000;
+}
+
+.logo {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 15px;
+  align-self: center;
+}
+
+.nav-items {
+  display: flex;
   list-style-type: none;
+}
+
+.nav-items li a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 0%;
+  grid-column-end: var(#000);
+}
+
+.link:hover {
+  color: orange;
+}
+
+.books {
+  list-style-type: none;
+  overflow: auto;
+  padding: 20px;
 }
 
 .books-li {
@@ -44,10 +86,27 @@ input {
 }
 
 .my-grid {
+  flex-direction: column;
+  display: none;
+  margin: 0 5%;
+  width: 90%;
+  align-items: center;
+  height: 500px;
+}
+
+.add-book {
+  display: none;
+}
+
+.load:hover {
+  color: blue;
+}
+
+.enter-book-and-title {
   display: flex;
   flex-direction: column;
   margin: 0 5%;
-  width: 90%;
+  width: 93%;
   align-items: center;
 }
 
@@ -61,9 +120,53 @@ input {
   border-radius: 4px;
 }
 
-button:hover {
+.removeBook:hover {
+  background-color: rgb(4, 39, 240);
+  border: 0;
+  transition: 0.9s;
+  font-weight: bold;
+}
+
+.add:hover {
   background-color: white;
   color: black;
   font-weight: bold;
   transition: 0.9s;
+}
+
+footer {
+  display: flex;
+  background-color: grey;
+  border-color: #000;
+  color: #fff;
+  height: 55px;
+  align-self: center;
+  padding-left: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 95%;
+  margin: auto;
+}
+
+.contact-info {
+  flex-direction: column;
+  display: none;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-list li {
+  list-style-type: disc;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  width: 95%;
+  margin: auto;
+  font-size: 20px;
 }
